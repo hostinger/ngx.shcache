@@ -23,7 +23,7 @@ local function _get_default_lock_options()
    }
 end
 
-local conf = require("conf")
+local conf = require("shcache_conf")
 if conf then
    DEFAULT_NEGATIVE_TTL = conf.DEFAULT_NEGATIVE_TTL or DEFAULT_NEGATIVE_TTL
    DEFAULT_ACTUALIZE_TTL = conf.DEFAULT_ACTUALIZE_TTL or DEFAULT_ACTUALIZE_TTL
