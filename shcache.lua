@@ -237,7 +237,7 @@ local function _return(self, data, flags)
 
    self.cache_status = cache_status
 
-   return data, self.from_cache
+   return data, self.from_cache, cache_status
 end
 
 local function _set(self, ...)
